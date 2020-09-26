@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+.row {
+  margin: 10px -16px;
+}
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  display: none; /* Hide all elements by default */
+}
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- MAIN (Center website) -->
+<div class="main">
+<h1>Rushabh Machigar</h1>
+<hr>
+<h2>PROJECT PORTFOLIO</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Project </button>
+  <button class="btn" onclick="filterSelection('nature')"> Code</button>
+  <button class="btn" onclick="filterSelection('cars')"> OutPut</button>
+  <button class="btn" onclick="filterSelection('people')"> Variable Table</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<!-- Online project Code Start  -->
+
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+    <article > <b>
+	import java.io.*;<br>
+import java.util.Scanner;<br>
+<br>
+public class Main<br>
+<br>
+{<br>
+<br>
+public static void main(String as[])<br>
+{<br>
+int i=0,x,op,sum=0,m;<br>
+<br>
+String con="";<br>
+<br>
+int a[]=new int[10];<br>
+<br>
+int n[]=new int[10];<br>
+<br>
+String s[]={"Science -book(Rs.200)","History -book(Rs. 100)",
+
+"Physics -book(Rs. 150)","English -book(Rs. 300)", "Math -book(Rs. 400)"  };<br>
+<br>
+Scanner sc = new Scanner(System.in);<br>
+do<br>
+<br>
+{<br>
+<br>
+System.out.println("Select Items from the list:\n");<br>
+<br>
+System.out.println(" 1.Science   -book\tRs.200");<br>
+System.out.println(" 2.History   -book\tRs.100");<br>
+System.out.println(" 3.Physics   -book\tRs.150");<br>
+System.out.println(" 4.English   -book\tRs.300");<br>
+System.out.println(" 5.Math      -book\tRs.400");<br>
+<br>
+System.out.println("\nSelect the Item number:");<br>
+<br>
+x=Integer.parseInt(sc.nextLine());<br>
+<br>
+if(x<1 || x>5) continue;<br>
+<br>
+a[i]=x;<br>
+<br>
+System.out.println("Enter quantity:");<br>
+<br>
+n[i]=Integer.parseInt(sc.nextLine());<br>
+<br>
+i++;<br>
+System.out.println("Add more Items?(y,n):");<br>
+<br>
+con=sc.nextLine();<br>
+<br>
+} while(con.equals("y"));<br>
+<br>
+m=i; // number of items<br>
+<br>
+System.out.println("\n 1. Check out \n 2. Cancel the order \n");<br>
+<br>
+System.out.println("Enter option:");<br>
+<br>
+op=Integer.parseInt(sc.nextLine());<br>
+<br>
+if(op==1)<br>
+<br>
+{<br>
+<br>
+System.out.println("==========================================");<br>
+<br>
+System.out.println("\nItem\tQuantity");<br>
+<br>
+System.out.println("==========================================");<br>
+<br>
+for(i=0;i<=5;i++)<br>
+<br>
+{<br>
+<br>
+if(a[i]==1)<br>
+<br>
+sum=sum+n[i]*200;<br>
+<br>
+else if(a[i]==2)<br>
+<br>
+sum=sum+n[i]*100;<br>
+<br>
+else if(a[i]==3)<br>
+<br>
+sum=sum+n[i]*150;<br>
+<br>
+else if(a[i]==4)<br>
+<br>
+sum=sum+n[i]*300;<br>
+<br>
+else if(a[i]==5)<br>
+<br>
+sum=sum+n[i]*400;<br>
+<br>
+System.out.println("\n"+s[a[i]]+"\t"+n[i]);<br>
+<br>
+}<br>
+<br>
+System.out.println("==========================================");<br>
+<br>
+System.out.println("\nTotal Bill : "  +sum);<br>
+<br>
+System.out.println("==========================================");<br>
+<br>
+}<br>
+<br>
+}<br>
+<br>
+}<br></b>
+</article> 
+	  
+    </div>
+  </div>
+  <!------------ Online project Code End------------->
+  
+ <!------------ OutPut  start ------------->
+
+  <div class="column cars">
+    <div class="content">
+      
+      <h4>OUTPUT</h4>
+      
+	  <p>Select Items from the list:<br>
+<br>
+ 1.Science   -book	Rs.200<br>
+ 2.History   -book	Rs.200<br>
+ 3.Physics   -book	Rs.150<br>
+ 4.English   -book	Rs.300<br>
+ 5.Math      -book	Rs.400<br>
+<br>
+Select the Item number:<br>
+1<br>
+Enter quantity:<br>
+1<br>
+Add more Items?(y,n):<br>
+y<br>
+Select Items from the list:<br>
+<br>
+ 1.Science   -book	Rs.200<br>
+ 2.History   -book	Rs.200<br>
+ 3.Physics   -book	Rs.150<br>
+ 4.English   -book	Rs.300<br>
+ 5.Math      -book	Rs.400<br>
+<br>
+Select the Item number:<br>
+2<br>
+Enter quantity:<br>
+1<br>
+Add more Items?(y,n):<br>
+n<br>
+<br>
+ 1. Check out<br> 
+ 2. Cancel the order <br>
+<br>
+Enter option:<br>
+1<br>
+==========================================<br>
+<br>
+Item	Quantity<br>
+==========================================<br>
+<br>
+History -book(Rs. 200)	1<br>
+<br>
+Physics -book(Rs. 150)	1<br>
+<br>
+Science -book(Rs.200)	0<br>
+<br>
+Science -book(Rs.200)	0<br>
+<br>
+Science -book(Rs.200)	0<br>
+<br>
+Science -book(Rs.200)	0<br>
+==========================================<br>
+<br>
+Total Bill : 400<br>
+==========================================<br>
+	  
+	  
+	  
+    </div>
+  </div>
+  
+  
+  
+   <!------------ OutPut  End ------------->
+
+
+  <div class="column people">
+    <div class="content">
+    
+      <table , align=center>
+  <tr>
+    <th>Data Type</th>
+    <th>Variable</th>
+    <th>Discription</th>
+  </tr>
+  <tr>
+    <td>String </td>
+    <td>con</td>
+    <td>To Store the value</td>
+  </tr>
+  <tr>
+    <td>Int </td>
+    <td> i </td>
+    <td>To Store value</td>
+  </tr>
+  <tr>
+    <td>Int </td>
+    <td>x</td>
+    <td>To store value </td>
+  </tr>
+  <tr>
+    <td>Int </td>
+    <td> op </td>
+    <td>To store value</td>
+  </tr>
+  <tr>
+    <td>Int  </td>
+    <td> m </td>
+    <td>To store value</td>
+  </tr>
+  <tr>
+    <td>Int </td>
+    <td>Sum </td>
+    <td>To store value</td>
+  </tr>
+</table>
+    </div>
+  </div>
+  
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
